@@ -79,7 +79,7 @@ body {
   
   .weather.loading:after {
     visibility: visible;
-    content: "Searching ...";
+    content: url(assets/Loading.svg);
     color: white;
     position: absolute;
     top: 0;
