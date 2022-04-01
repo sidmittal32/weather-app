@@ -39,6 +39,19 @@ body {
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
+
+  .fahrenheit {
+    margin: 0.5em;
+    border-radius: 5%;
+    border: none;
+    height: 44px;
+    width: 88px;
+    outline: none;
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
   
   input.search-bar {
     border: none;

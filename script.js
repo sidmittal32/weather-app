@@ -44,4 +44,21 @@ document
     }
   });
 
+  document.querySelector('.fahrenheit').addEventListener('click', toggleFahrenheit);
+
+function toggleFahrenheit() {
+   const temp = document.querySelector('.temp');
+   const fahrenheit = document.querySelector('.fahrenheit');
+   const celsius = document.querySelector('.celsius');
+   if(fahrenheit.classList.contains('active')) {
+      temp.innerText = ((parseFloat(temp.innerText) - 32) * 5 / 9).toFixed(2) + "°C";
+      fahrenheit.classList.remove('active');
+      celsius.classList.add('active');
+   } else {
+      temp.innerText = ((parseFloat(temp.innerText) * 9 / 5) + 32).toFixed(2) + "°F";
+      fahrenheit.classList.add('active');
+      celsius.classList.remove('active');
+   }
+}
+
 weather.fetchWeather("New Delhi");
